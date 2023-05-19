@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Library</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <script src="https://kit.fontawesome.com/afceef289c.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <div class="overlay" id="overlay"></div>
+		<header>
+			<div class="container">
+                <h1 class="title">library</h1>
+                <nav>
+                    <div id="logging">
+                        <button class="btn log-in">Log in</button>
+                    </div>
+                </nav>
+			</div>
+		</header>
+        
+		<main>
+			<button class="btn add-book" id="addBookBtn" >+ Add book</button>
+			<div id="grid-books"></div>
+		</main>
+        <div class="addBookModel">
+            <form id="add-book-form">
+                <h3>Add new book</h3>
+                <input id ="title" type="text" placeholder="Title" required maxlength="30">
+                <input id ="author" type="text"placeholder="Author" required maxlength="30">
+                <input id ="pages" type="number"placeholder="Pages" required max="10000" min="1">
+                <div class="is-read">
+                    <label for="is-read">Have you read it?</label>
+                    <input type="checkbox" class="is-read" id="isRead" value="off"> 
+                </div>
+                <button class="btn btn-submit" type="submit">Submit
+                </form>
+
+            </div>
+            <div class="modal" id="accountModal"></div>
+
+            
+            
+            <footer>
+                <p>Copyright ©</p>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                <p>souhail-lass</p>
+                <a href="https://github.com/souhail-lass" class="profile-gitHub">
+                    <i class="fa-brands fa-github fa-shake fa-lg"></i>
+                </a>
+            </footer>
+		<script src="main.js"></script>
+	</body>
+</html>
